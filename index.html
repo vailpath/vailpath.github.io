@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极品家丁漫画-极品家丁漫画全集阅读指南与作品介绍</title>
+    <meta name="description" content="极品家丁漫画全集在线阅读指南，了解漫画剧情梗概、角色介绍、观看顺序及阅读平台推荐。为漫画爱好者提供全面的极品家丁漫画相关介绍与阅读建议。">
+    <meta name="keywords" content="极品家丁漫画,极品家丁漫画全集,极品家丁漫画在线阅读,极品家丁漫画剧情,家丁漫画推荐">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f7f4ee;
+            color: #2c2c2c;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background: linear-gradient(135deg, #8b0000 0%, #a52a2a 50%, #c1440e 100%);
+            padding: 20px 0;
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .brand a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .brand span {
+            font-size: 0.9rem;
+            display: block;
+            color: #f0d9b5;
+            letter-spacing: 1px;
+            font-weight: normal;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .main-nav a {
+            color: #f5e6d3;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            background-color: rgba(255,255,255,0.15);
+            color: #fff;
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,0 100,0 100,100" fill="%23a52a2a" opacity="0.3"/><polygon points="0,100 100,0 0,0" fill="%23c1440e" opacity="0.2"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 70px 20px;
+            border-bottom: 6px solid #8b0000;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e0a458;
+            color: #5a2d0c;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #8b0000;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #c1440e, #e0a458);
+            border-radius: 2px;
+        }
+
+        /* Intro cards */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .intro-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #c1440e;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .intro-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+
+        .intro-card h3 {
+            color: #8b0000;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .intro-card p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* Story section */
+        .story-section {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            margin-bottom: 40px;
+        }
+
+        .story-section h3 {
+            color: #8b0000;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0d9b5;
+        }
+
+        .story-section p {
+            margin-bottom: 15px;
+            color: #4a4a4a;
+        }
+
+        /* Character list */
+        .characters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .character-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-top: 4px solid #c1440e;
+            transition: all 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .character-card .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #c1440e, #e0a458);
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .character-card h4 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .character-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Reading order */
+        .steps-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        .steps-list li {
+            counter-increment: step-counter;
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            transition: transform 0.2s;
+        }
+
+        .steps-list li:hover {
+            transform: translateX(5px);
+        }
+
+        .steps-list li::before {
+            content: counter(step-counter);
+            background: #c1440e;
+            color: white;
+            font-weight: bold;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1rem;
+        }
+
+        .steps-list li div h4 {
+            color: #8b0000;
+            margin-bottom: 5px;
+        }
+
+        .steps-list li div p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Advantages */
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .advantage-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .advantage-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .advantage-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .advantage-item h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .advantage-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 18px 25px;
+            font-weight: 600;
+            color: #8b0000;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #fdf6ef;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: #c1440e;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: #fdf8f2;
+        }
+
+        .faq-answer p {
+            padding: 0 25px 20px;
+            color: #555;
+        }
+
+        /* CTA */
+        .cta-box {
+            background: linear-gradient(135deg, #8b0000, #a52a2a);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            color: #fff;
+            margin: 40px 0;
+        }
+
+        .cta-box h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #1a1a1a;
+            color: #bbb;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col a {
+            color: #aaa;
+            text-decoration: none;
+            line-height: 2;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: #e0a458;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 30px 0;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .story-section {
+                padding: 25px;
+            }
+
+            .characters {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                gap: 15px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .cta-box {
+                padding: 25px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 40px 15px;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+                letter-spacing: 1px;
+            }
+
+            .brand a {
+                font-size: 1.4rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="#">极品家丁漫画</a>
+                <span>漫画阅读与作品百科</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#story">漫画简介</a></li>
+                    <li><a href="#characters">角色图鉴</a></li>
+                    <li><a href="#reading">阅读顺序</a></li>
+                    <li><a href="#advantages">作品亮点</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>极品家丁漫画</h1>
+        <p>一部融合穿越、权谋与幽默的古代家丁题材漫画，带你走进林晚荣的逆袭人生。无论你是漫画老读者还是初次接触，这里都有你需要的阅读指南与作品深度解析。</p>
+        <a href="#story" class="btn">开始探索漫画世界</a>
+    </section>
+
+    <main>
+        <!-- 漫画简介 -->
+        <section class="section" id="story">
+            <div class="container">
+                <div class="section-title">
+                    <h2>漫画简介与核心看点</h2>
+                </div>
+
+                <div class="story-section">
+                    <h3>关于《极品家丁漫画》</h3>
+                    <p>《极品家丁漫画》改编自同名热门网络小说，以穿越为起点，讲述了现代青年林晚荣意外回到古代，阴差阳错成为大户人家的一名低等家丁。然而，这位看似不起眼的小家丁却凭借现代知识与过人的胆识，在一系列啼笑皆非的事件中步步高升，卷入朝堂与江湖的纷争之中。</p>
+                    <p>漫画版在保留原著幽默诙谐风格的同时，通过生动分镜与鲜明的人物造型，强化了故事的戏剧张力和视觉表现力。从市井小民的柴米油盐到庙堂之上的权力博弈，作品用轻松的方式勾勒出一幅古代社会生活画卷。</p>
+                    <p>对于喜欢穿越、逆袭、权谋与喜剧元素的读者来说，这部漫画提供了一个轻松解压又不失深度的阅读选择。目前该漫画仍在持续连载中，积累了相当数量的忠实粉丝群体。</p>
+                </div>
+
+                <div class="intro-grid">
+                    <div class="intro-card">
+                        <h3>轻松幽默的基调</h3>
+                        <p>故事虽然涉及权谋斗争，但整体氛围轻松愉快。主角林晚荣的现代思维和古装世界碰撞产生的笑料，是吸引读者的重要因素。</p>
+                    </div>
+                    <div class="intro-card">
+                        <h3>饱满的角色群像</h3>
+                        <p>除了主角的成长线，漫画中众多性格鲜明的配角同样出彩。无论是温柔端庄的大家闺秀，还是忠心耿耿的小厮伙伴，每个角色都有自己的故事。</p>
+                    </div>
+                    <div class="intro-card">
+                        <h3>紧凑的剧情节奏</h3>
+                        <p>漫画改编在情节上做了适当的精简与优化，每一话都有明确推进，悬念设置合理，让读者有持续追更的动力。</p>
+                    </div>
+                    <div class="intro-card">
+                        <h3>原作粉丝的视觉延伸</h3>
+                        <p>对于读过原著的读者来说，漫画提供了一种全新的视觉化体验，角色形象更加具象化，场景描写更加直观。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角色介绍 -->
+        <section class="section" id="characters" style="background: #f0ebe2;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>主要角色图鉴</h2>
+                </div>
+
+                <div class="characters">
+                    <div class="character-card">
+                        <div class="avatar">林</div>
+                        <h4>林晚荣</h4>
+                        <p>现代穿越而来的主角，机智幽默，重情重义。从一个无名家丁逐渐成长为搅动风云的关键人物。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="avatar">萧</div>
+                        <h4>萧家大小姐</h4>
+                        <p>温婉聪慧，出身名门。与林晚荣之间的互动既温馨又充满波折，是故事中的重要情感线。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="avatar">巧</div>
+                        <h4>巧儿</h4>
+                        <p>萧府中的丫鬟，天真烂漫，对林晚荣充满信任与依赖，是主角早期的忠实伙伴。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="avatar">徐</div>
+                        <h4>徐渭</h4>
+                        <p>朝中重臣，老谋深算。与林晚荣亦敌亦友，在权谋博弈中展现出复杂的人物性格。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="avatar">洛</div>
+                        <h4>洛敏</h4>
+                        <p>江湖人士，性情豪爽。为故事增添了武侠色彩，与主角有着深厚的交情。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="avatar">秦</div>
+                        <h4>秦仙儿</h4>
+                        <p>神秘女子，身世成谜。她的出现让故事走向更加扑朔迷离，与林晚荣之间有着特殊的联系。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 阅读指南 -->
+        <section class="section" id="reading">
+            <div class="container">
+                <div class="section-title">
+                    <h2>漫画阅读指南</h2>
+                </div>
+
+                <ol class="steps-list">
+                    <li>
+                        <div>
+                            <h4>了解原作背景</h4>
+                            <p>建议先了解《极品家丁》原著的创作背景和基本设定，这有助于更快理解漫画中的世界观和人物关系。不过直接阅读漫画也不会感到障碍，因为漫画在开篇已做了适当铺垫。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>确认阅读渠道</h4>
+                            <p>目前《极品家丁漫画》在多个正版漫画平台均有连载。建议优先选择官方授权平台进行阅读，以获得清晰的画质和及时的更新，同时支持创作者。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>按顺序追更</h4>
+                            <p>漫画按照章节顺序连载，剧情连续性强，建议从第一话开始阅读。部分平台可能有特别篇或番外篇，可以作为主线之外的补充阅读。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>关注更新动态</h4>
+                            <p>由于漫画仍在连载，建议关注官方平台或相关社交媒体账号，以便第一时间获取更新通知。同时可以留意是否有关注实体单行本出版的消息。</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 作品亮点 -->
+        <section class="section" id="advantages" style="background: #f0ebe2;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>这部漫画为何值得阅读</h2>
+                </div>
+
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <span class="advantage-icon">🎭</span>
+                        <h4>古今碰撞的幽默感</h4>
+                        <p>现代思维与古代环境产生的反差笑料层出不穷，让阅读过程充满乐趣。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <span class="advantage-icon">📖</span>
+                        <h4>剧情有深度</h4>
+                        <p>在搞笑之外，故事对人性、权力、情感的探讨也颇具深度，值得回味。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <span class="advantage-icon">🎨</span>
+                        <h4>画风表现力强</h4>
+                        <p>漫画分镜流畅，人物表情刻画细腻，打斗场景与搞笑桥段都极具表现力。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <span class="advantage-icon">🔥</span>
+                        <h4>持续更新中</h4>
+                        <p>故事正处于精彩阶段，每周都有新内容可看，适合喜欢追更体验的读者。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题解答</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">漫画与原著小说有哪些差异？</button>
+                        <div class="faq-answer">
+                            <p>漫画在改编过程中对剧情进行了一定程度的精简和调整，删减了一些支线情节，使叙事节奏更加紧凑。同时增加了部分原创细节来强化视觉表现。整体主线与原著保持一致，但阅读体验各有千秋。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">漫画目前更新到什么进度了？</button>
+                        <div class="faq-answer">
+                            <p>由于连载平台和版本不同，更新进度会有所差异。建议读者直接前往您常用的正版漫画平台查看最新的章节列表和更新时间，以获取最准确的信息。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">我需要先读原著才能看懂漫画吗？</button>
+                        <div class="faq-answer">
+                            <p>完全不需要。漫画本身就是独立的叙事作品，开篇会有清晰的世界观和人物介绍。无论你是否读过原著，都可以轻松进入漫画的故事中。当然，读过原著的读者能发现更多改编的巧思。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">这部漫画适合什么类型的读者？</button>
+                        <div class="faq-answer">
+                            <p>这部漫画适合喜欢穿越题材、古代权谋、喜剧风格的读者。同时，由于作品包含一定的感情线和朝堂斗争，对于喜欢多层次故事的漫画爱好者来说也很有吸引力。其轻松幽默的基调也适合作为日常解压读物。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">是否有实体书出版计划？</button>
+                        <div class="faq-answer">
+                            <p>关于实体书出版的信息，请关注漫画官方平台的公告或出版社的官方消息。目前网络连载是主要的发布形式，实体书消息请以官方发布为准。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="container">
+            <div class="cta-box">
+                <h3>准备开启这段家丁逆袭之旅了吗？</h3>
+                <p>打开你常用的漫画阅读平台，搜索“极品家丁漫画”，即可找到正版连载内容。记得从第一话开始阅读，感受林晚荣的传奇故事。</p>
+                <a href="#" class="btn" style="background: #fff; color: #8b0000;">寻找阅读平台</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于本页</h4>
+                    <p style="line-height: 1.8; font-size: 0.9rem;">本站为《极品家丁漫画》的非官方爱好者指南页面，旨在提供作品介绍与阅读帮助。所有版权归原作者及版权方所有。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>相关阅读</h4>
+                    <ul>
+                        <li><a href="#">漫画阅读平台推荐</a></li>
+                        <li><a href="#">原著小说介绍</a></li>
+                        <li><a href="#">同类漫画推荐</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>友情提示</h4>
+                    <ul>
+                        <li><a href="#">支持正版漫画</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 极品家丁漫画爱好指南 | 本页面仅供信息分享，内容请以官方平台为准。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 交互逻辑
+        document.querySelectorAll('.faq-item').forEach(function(item) {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+
+            question.addEventListener('click', function() {
+                const isActive = item.classList.contains('active');
+
+                // 关闭其他所有 FAQ
+                document.querySelectorAll('.faq-item').forEach(function(otherItem) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                // 如果当前不是活跃状态，则展开
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+
+</body>
+                                                                  </html>
